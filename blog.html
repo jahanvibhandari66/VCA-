@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<head>
+    <title> BLOG WEBSITE
+    </title>
+    <style>
+     body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #ea3f3f;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav {
+            background-color: #d33f3f;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .blog-post {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .blog-post h2 {
+            margin-top: 0;
+        }
+
+        .blog-post p {
+            color: #932266;
+        }
+
+        footer {
+            background-color: #d33f3f;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #about, #contact {
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
+
+    </style>
+    <script>
+        function showSection(section) {
+            document.getElementById('home').style.display = 'none';
+            document.getElementById('about').style.display = 'none';
+            document.getElementById('contact').style.display = 'none';
+
+            document.getElementById(section).style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1> Welcome to My Blog </h1>
+    </header>
+    <nav>
+        <a href="#" onclick="showSection('home')">HOME</a>
+        <a href="#" onclick="showSection('about')">ABOUT</a>
+        <a href="#" onclick="showSection('contact')">CONTACT</a>
+    </nav>
+    <div class="container">
+        <div id="home" class="active">
+        <div class="blog-post">
+            <h2>BLOG POST TITLE 1 </h2>
+            <p>Posted on August 14,2024 by Author Name</p>
+            <p>Love and Lemons was created by Jeanine Donofrio and her husband, Jack Mathews (“#1 taste-tester”). The blog’s name comes from the fact that Jeanine loves seasonal food, often finished off with a squeeze of lemon.
+                Most of the recipes on the site are vegetarian.
+                The blog was founded in 2011 and has been recognized by prestigious food magazines like Food & Wine, Food52, Refinery29, SELF Magazine, and Oprah Magazine. It was named Readers’ Choice Best Cooking Blog by Saveur Magazine in 2014 and won a Saveur Editor’s Choice award in 2016.    
+                If you are looking for a recipe, you can filter your search by season, holiday, special diet, meal type, or ingredient.</p>
+            
+        </div>
+    
+        <div class="blog-post">
+            <h2>BLOG POST TITLE 2 </h2>
+            <p>Posted on August 13,2024 by Author Name</p>
+            <p>Cookie and Kate is all about celebrating good food. Kate is Kathryne Taylor. Cookie is her dog – which Kate describes as a “mystery mutt,” or as a DNA test found, half schipperke and half dachshund/Australian Koolie mix.
+                Kate is a photographer and cook from Oklahoma. She created the blog in 2010 and now works on it full-time.  
+                Like many of the other top food blogs featured here, Cookie and Kate feature vegetarian and whole food recipes.   
+                The site makes it easy to search for recipes. You can look for recipes by Course, Cuisine, Diet, Everyday, Ingredient, or Season.\</p>
+
+</div>
+    <div class="blog-post">
+        <h2>BLOG POST TITLE  </h2>
+        <p>Posted on August 12,2024 by Author Name</p>
+        <p>Minimalist Baker is one of those sites where the name says it all. It shares plant-based recipes requiring 10 ingredients or less, 1 bowl, or 30 minutes or less to prepare. It publishes a new recipe every three days, with a mixture of savory and sweet dishes.
+            Dana Shultz is the blog's recipe developer and blogger. She has a deep love for recipe experimentation and food photography. She has even expanded into creating an "Essentials of Building a Great Food Blog Course."
+            Despite the use of the word “baker” in the site’s name, it covers many different types of (predominantly vegan) cooking – sweets, entrees, breakfast, snacks, sides, and beverages.</p>
+    </div>
+    </div>
+    <div id="about">
+        <div class="blog-post">
+            <h2>About the Authors</h2>
+            <p>Our blog is authored by a group of passionate writers who love to share their insights on various topics ranging from technology to lifestyle.
+                 Each post is carefully crafted to bring value to our readers.</p>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="blog-post">
+            <h2>Contact Us</h2>
+            <p>You can reach us at:</p>
+            <p><strong>Phone:</strong> +91 9870654321</p>
+            <p><strong>Email:</strong> blog@gmail.com</p>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 My Blog | Designed </p>
+    </footer>
+        </body>
+        </html>
